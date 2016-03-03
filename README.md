@@ -2,6 +2,11 @@
 Extremely simple utility for storing data across hot reloads.  
 Compatible with: [systemjs-hot-reloader](https://github.com/capaj/systemjs-hot-reloader)
 
+## Install
+```
+jspm install systemjs-hot-reloader-store
+```
+
 ## Usage
 ``` javascript
 import getHotReloadStore from './utils/getHotReloadStore.js';
