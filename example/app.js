@@ -10,6 +10,7 @@ const state = hotStore.state || {
 // change state
 state.counter += 1;
 console.log('state.counter: ', state.counter);
+document.body.innerHTML = state.counter;
 
 // store state
 hotStore.state = state;
