@@ -23,3 +23,21 @@ state.counter += 1;
 // store state
 hotStore.state = state;
 ```
+
+## Redux example
+``` javascript
+import { createStore } from 'redux';
+import getHotReloadStore from './utils/getHotReloadStore.js';
+const hotStore = getHotReloadStore('project:store');
+
+let prevState;
+if (hotStore.prevStore) {
+  prevState = hotStore.prevStore.getState(); 
+}
+
+export default function configureStore(reducers, initialState = prevState) {
+  const store = createStore(reducers, initialState); 
+  hotStore.prevStore = store;
+  return store;
+}
+```
