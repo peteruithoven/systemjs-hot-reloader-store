@@ -1,6 +1,7 @@
 # SystemJS hot reloader store
 Extremely simple utility for storing data across hot reloads.  
-Compatible with: [systemjs-hot-reloader](https://github.com/capaj/systemjs-hot-reloader)
+Compatible with: [systemjs-hot-reloader](https://github.com/capaj/systemjs-hot-reloader).  
+This works because the data is put in a seperate module that isn't reloaded. See: https://github.com/capaj/systemjs-hot-reloader#preserving-state
 
 ## Install
 ```
